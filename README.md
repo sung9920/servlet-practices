@@ -33,7 +33,7 @@
 		    <scope>provided</scope>
 		</dependency>
 	</dependencies>
-```
+```   
 
 3) 패키징 war 파일 이름 지정
 
@@ -43,7 +43,7 @@
 </build>
 ```
 
-#### 3. webx.xml 생성
+#### 3. web.xml 생성
 Java EE Tools > Generate Deployment Descriptor 메뉴 선택
 
 
