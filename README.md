@@ -36,7 +36,7 @@
 ```   
 
 3) 패키징 war 파일 이름 지정
-
+ 
 ```xml
 <build>
 	<finalName>helloweb</finalName>
