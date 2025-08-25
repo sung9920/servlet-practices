@@ -3,7 +3,7 @@
 <%@ page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%
-	List<EmailVo> list = new EmailDao().findAll();
+	List<EmailVo> list = (List<EmailVo>requset.getAttribute ("list");
 %>
 <html>
 <head>

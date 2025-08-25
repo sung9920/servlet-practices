@@ -1,10 +1,15 @@
 package com.bit2025.emaillist.controller;
 
+import java.io.IOException;
+import java.util.List;
+
+import com.bit2025.emaillist.dao.EmailDao;
+import com.bit2025.emaillist.vo.EmailVo;
+
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-import java.io.IOException;
 
 public class EmaillistServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
@@ -13,6 +18,10 @@ public class EmaillistServlet extends HttpServlet {
 		String action = request.getParameter("a");
 		
 		if("list".equals(action)) {
+			List<EmailVo> list = new EmailDao().findAll();
+			
+			request.setAttribute("list", list);
+			RequsetDispatcher rd = requset.get
 			
 		} else if("form".equals(action)) {
 			
