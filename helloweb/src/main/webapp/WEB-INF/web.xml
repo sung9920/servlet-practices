@@ -14,6 +14,11 @@
 		<servlet-name>CookieServlet</servlet-name>
 		<servlet-class>helloweb.CookieServlet</servlet-class>
 	</servlet>
+	
+	<servlet>
+		<servlet-name>LifeCycleServlet</servlet-name>
+		<servlet-class>helloweb.LifeCycleServlet</servlet-class>
+	</servlet>
 
 	<servlet-mapping>
 		<servlet-name>HelloServlet</servlet-name>
@@ -24,7 +29,12 @@
 		<servlet-name>CookieServlet</servlet-name>
 		<url-pattern>/cookie</url-pattern>
 	</servlet-mapping>
-
+	
+	<servlet-mapping>
+		<servlet-name>LifeCycleServlet</servlet-name>
+		<url-pattern>/lc</url-pattern>
+	</servlet-mapping>
+	
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>
 		<welcome-file>index.htm</welcome-file>
