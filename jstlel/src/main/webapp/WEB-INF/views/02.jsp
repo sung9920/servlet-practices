@@ -15,6 +15,19 @@
 </head>
 <body>
 	<h4>scope(객체의 존속 범위)</h4>
+	${vo.id } <br>
+	${vo.name} <br><br>
 
+	== request scope == <br>
+	${requestScope.vo.id } <br>
+	${requestScope.vo.name } <br><br>
+
+	== session scope == <br>
+	${sessionScope.vo.id } <br>
+	${sessionScope.vo.name } <br><br>
+
+	== application scope == <br>
+	${applicationScope.vo.id } <br>
+	${applicationScope.vo.name } <br><br>
 </body>
 </html>
